@@ -105,28 +105,70 @@ html {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
   color: #564D4D;
 }
 
-.wrapper {
+header,
+footer {
+    background-color: #F7A2E5;
+    height: 80px;
+    width: 100%;
+}
+
+main {
+    background-color: #F9FAD2;
+    height: 250px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+/*
+header,*/
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    padding: 5px 10px;
+}
+
+.flex-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  /*align-items: center;*/
+  align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
+#div-1, #div-2, #div-3 {
   color: #564D4D;
   line-height: 1.5em;
   font-size: 1.25em;
+  background-color: #FCDCFC;
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   width: 30%;
+  padding: 5px;
+}
+
+#div-1 {
+    border-right:#564D4D solid 1px;
+}
+
+#div-2 {
+    border-right: #564D4D solid 1px;
 }
 
 
